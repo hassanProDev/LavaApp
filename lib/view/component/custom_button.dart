@@ -1,27 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:lava_app/model/custom_btn_model.dart';
 
 class CustomButton extends StatelessWidget {
-  CustomBtnModel? cbm=CustomBtnModel(16, 'Login', Colors.blue,double.infinity);
+  String? text;
+  Color? color;
+  Color? textColor;
 
+  CustomButton({this.text, this.color, this.textColor});
   @override
   Widget build(BuildContext context) {
-cbm!.width=600;
     return InkWell(
-      splashColor: Colors.white,
-      child:Container(
-        width: cbm!.width,
-        padding: EdgeInsets.symmetric(vertical: cbm!.verticalPadding!),
+      child: Container(
         decoration: BoxDecoration(
-          color: cbm!.color,
+          color: color,
           borderRadius: BorderRadius.circular(10),
         ),
-        child: Text('${cbm!.text}',textAlign: TextAlign.center,),
+        padding: EdgeInsets.symmetric(vertical: 16),
+        width: double.infinity,
+        child: Text(text!, style: TextStyle(color: textColor, fontSize: 18,),textAlign: TextAlign.center,),
       ),
-      onTap: () {
-
-      },
-
     );
   }
 }

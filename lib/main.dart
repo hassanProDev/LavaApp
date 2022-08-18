@@ -3,8 +3,10 @@ import 'package:lava_app/view/register_screen/register_screen.dart';
 
 
 void main(){
+
   runApp(MyApp());
 }
+
 
   class MyApp extends StatelessWidget {
 
