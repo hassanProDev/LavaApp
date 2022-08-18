@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lava_app/view/register_screen/register_screen.dart';
 
 
 void main(){
@@ -10,7 +11,8 @@ void main(){
     @override
     Widget build(BuildContext context) {
       return MaterialApp(
-        home: Container(),
+        debugShowCheckedModeBanner: false,
+        home: RegisterScreen(),
       );
     }
   }
