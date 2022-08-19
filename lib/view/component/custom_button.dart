@@ -4,11 +4,16 @@ class CustomButton extends StatelessWidget {
   String? text;
   Color? color;
   Color? textColor;
+  Function? onTab;
 
-  CustomButton({this.text, this.color, this.textColor});
+  CustomButton({this.text, this.color, this.textColor,this.onTab});
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: (){
+        onTab!();
+      },
       child: Container(
         decoration: BoxDecoration(
           color: color,
@@ -16,7 +21,14 @@ class CustomButton extends StatelessWidget {
         ),
         padding: EdgeInsets.symmetric(vertical: 16),
         width: double.infinity,
-        child: Text(text!, style: TextStyle(color: textColor, fontSize: 18,),textAlign: TextAlign.center,),
+        child: Text(
+          text!,
+          style: TextStyle(
+            color: textColor,
+            fontSize: 18,
+          ),
+          textAlign: TextAlign.center,
+        ),
       ),
     );
   }

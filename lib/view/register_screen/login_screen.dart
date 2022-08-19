@@ -17,14 +17,20 @@ class LoginScreen extends StatelessWidget {
           text: 'Login',
           color: Colors.green,
           textColor: Colors.white,
+          onTab: () {},
         ),
         CustomHyperText(),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomBtnIcon(imgName: 'Google'),
-            CustomBtnIcon(imgName: 'Facebook'),
-
+            CustomBtnIcon(
+              imgName: 'Google',
+              onTab: () {},
+            ),
+            CustomBtnIcon(
+              imgName: 'Facebook',
+              onTab: () {},
+            ),
           ],
         )
       ],

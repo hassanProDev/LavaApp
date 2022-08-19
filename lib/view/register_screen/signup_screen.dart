@@ -33,13 +33,20 @@ class SignUpScreen extends StatelessWidget {
           text: 'Sign Up',
           color: Colors.green,
           textColor: Colors.white,
+          onTab: () {},
         ),
         CustomHyperText(),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomBtnIcon(imgName: 'Google'),
-            CustomBtnIcon(imgName: 'Facebook'),
+            CustomBtnIcon(
+              imgName: 'Google',
+              onTab: () {},
+            ),
+            CustomBtnIcon(
+              imgName: 'Facebook',
+              onTab: () {},
+            ),
           ],
         )
       ],
