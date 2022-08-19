@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lava_app/view/home_screen/customise/custom_btn_nav.dart';
+
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'homeScreen';
 
@@ -11,7 +13,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        // bottomNavigationBar: CurvedNavigationBar(items: []),
         body: Row(
           children: [],
         ),
@@ -23,49 +24,23 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         bottomNavigationBar: BottomAppBar(
           shape: CircularNotchedRectangle(),
-          notchMargin:16,
+          notchMargin: 16,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: IconButton(
-                  onPressed: () {},
-                  icon: Image.asset('assets/images/homeScreen/lava.png'),
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CustomBtnNav(imgName: 'lava'),
+                  CustomBtnNav(imgName: 'barcode'),
+                ],
               ),
-              Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: IconButton(
-                  onPressed: () {},
-                  icon: Image.asset('assets/images/homeScreen/barcode.png'),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: IconButton(
-                  onPressed: () {},
-                  icon: Stack(
-                    alignment: AlignmentDirectional.topEnd,
-                    children: [
-                      Container(
-                        width: 8,
-                        height: 8,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(30),
-                            color: Colors.green),
-                      ),
-                      Image.asset('assets/images/homeScreen/Bell.png'),
-                    ],
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: IconButton(
-                  onPressed: () {},
-                  icon: Image.asset('assets/images/homeScreen/person.png'),
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CustomBtnNav(imgName: 'Bell'),
+                  CustomBtnNav(imgName: 'person'),
+                ],
               ),
             ],
           ),
