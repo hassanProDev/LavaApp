@@ -9,14 +9,13 @@ class Question extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height * 0.6,
-      padding: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Text(
             'What is the user experience?',
-            textAlign: TextAlign.center,style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 20),
           ),
           Container(
             padding: EdgeInsets.all(8),
@@ -30,6 +29,7 @@ class Question extends StatelessWidget {
                 Flexible(
                   child: Text(
                     'The user experience is how the developer feels about a user.',
+                    style: TextStyle(fontSize: 15),
                   ),
                 ),
                 Radio(
@@ -52,6 +52,7 @@ class Question extends StatelessWidget {
                 Flexible(
                   child: Text(
                     'The user experience is how the developer feels about a user.',
+                    style: TextStyle(fontSize: 15),
                   ),
                 ),
                 Radio(
@@ -74,6 +75,7 @@ class Question extends StatelessWidget {
                 Flexible(
                   child: Text(
                     'The user experience is how the developer feels about a user.',
+                    style: TextStyle(fontSize: 15),
                   ),
                 ),
                 Radio(
