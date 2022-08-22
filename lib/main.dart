@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: RegisterScreen(),
-      initialRoute: HomeScreen.routeName,
+      initialRoute: RegisterScreen.routeName,
       routes: {
         RegisterScreen.routeName: (_) => RegisterScreen(),
         HomeScreen.routeName: (_) => HomeScreen(),

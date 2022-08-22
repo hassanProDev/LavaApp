@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:lava_app/view/home_screen/home_screen.dart';
 
 import '../component/custom_button.dart';
 import '../component/custom_textfield.dart';
+import '../themes_colors.dart';
 import 'customise/btn_icon.dart';
 import 'customise/custom_hypertext.dart';
 
@@ -31,9 +33,11 @@ class SignUpScreen extends StatelessWidget {
         CustomTextField('Confirm Password'),
         CustomButton(
           text: 'Sign Up',
-          color: Colors.green,
+          color: MyTheme.primaryColor,
           textColor: Colors.white,
-          onTab: () {},
+          onTab: () {
+            Navigator.pushNamed(context, HomeScreen.routeName);
+          },
         ),
         CustomHyperText(),
         Row(
@@ -45,7 +49,8 @@ class SignUpScreen extends StatelessWidget {
             ),
             CustomBtnIcon(
               imgName: 'Facebook',
-              onTab: () {},
+              onTab: () {
+              },
             ),
           ],
         )
