@@ -3,17 +3,21 @@ import 'package:lava_app/view/themes_colors.dart';
 
 class Question extends StatelessWidget {
   // const Question({Key? key}) : super(key: key);
-var _ans;
+  var _ans;
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height*0.6,
+      height: MediaQuery.of(context).size.height * 0.6,
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Text('What is the user experience?',textAlign: TextAlign.center,),
+          Text(
+            'What is the user experience?',
+            textAlign: TextAlign.center,style: TextStyle(fontSize: 20),
+          ),
           Container(
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(
@@ -23,9 +27,16 @@ var _ans;
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('data'),
-                Radio(value: 'value', groupValue: _ans, onChanged: (value){
-                },),
+                Flexible(
+                  child: Text(
+                    'The user experience is how the developer feels about a user.',
+                  ),
+                ),
+                Radio(
+                  value: 'value',
+                  groupValue: _ans,
+                  onChanged: (value) {},
+                ),
               ],
             ),
           ),
@@ -38,9 +49,16 @@ var _ans;
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('data'),
-                Radio(value: 'value', groupValue: _ans, onChanged: (value){
-                },),
+                Flexible(
+                  child: Text(
+                    'The user experience is how the developer feels about a user.',
+                  ),
+                ),
+                Radio(
+                  value: 'value',
+                  groupValue: _ans,
+                  onChanged: (value) {},
+                ),
               ],
             ),
           ),
@@ -53,9 +71,16 @@ var _ans;
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('data'),
-                Radio(value: 'value', groupValue: _ans, onChanged: (value){
-                },),
+                Flexible(
+                  child: Text(
+                    'The user experience is how the developer feels about a user.',
+                  ),
+                ),
+                Radio(
+                  value: 'value',
+                  groupValue: _ans,
+                  onChanged: (value) {},
+                ),
               ],
             ),
           ),
