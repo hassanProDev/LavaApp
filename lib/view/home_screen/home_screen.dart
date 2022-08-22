@@ -49,7 +49,10 @@ class _HomeScreenState extends State<HomeScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CustomBtnNav(imgName: 'Bell',ellipse: true,),
+                  CustomBtnNav(imgName: 'Bell',ellipse: true,func: (){
+                    pageIndex=2;
+                    setState((){});
+                  },),
                   CustomBtnNav(imgName: 'person'),
                 ],
               ),
