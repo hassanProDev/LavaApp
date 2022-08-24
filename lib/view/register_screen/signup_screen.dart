@@ -20,17 +20,17 @@ class SignUpScreen extends StatelessWidget {
           children: [
             Container(
               width: MediaQuery.of(context).size.width * 0.38,
-              child: CustomTextField('First Name'),
+              child: CustomTextField('First Name',inputType: TextInputType.text,),
             ),
             Container(
               width: MediaQuery.of(context).size.width * 0.38,
-              child: CustomTextField('Last Name'),
+              child: CustomTextField('Last Name',inputType: TextInputType.text,),
             ),
           ],
         ),
-        CustomTextField('Email'),
-        CustomTextField('Password'),
-        CustomTextField('Confirm Password'),
+        CustomTextField('Email',inputType: TextInputType.emailAddress,),
+        CustomTextField('Password',inputType: TextInputType.visiblePassword,),
+        CustomTextField('Confirm Password',inputType: TextInputType.visiblePassword,),
         CustomButton(
           text: 'Sign Up',
           color: MyTheme.primaryColor,

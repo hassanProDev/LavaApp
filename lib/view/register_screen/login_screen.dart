@@ -13,8 +13,8 @@ class LoginScreen extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        CustomTextField('Email'),
-        CustomTextField('Password'),
+        CustomTextField('Email',inputType: TextInputType.text,),
+        CustomTextField('Password',inputType: TextInputType.visiblePassword,),
         CustomButton(
           text: 'Login',
           color: MyTheme.primaryColor,

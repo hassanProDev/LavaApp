@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
-import 'package:lava_app/view/home_screen/tabs/questions_screen/customise/question.dart';
+import 'package:flutter/material.dart';
+import 'package:lava_app/view/home_screen/questions_screen/customise/question.dart';
 
 List<Widget> questionData = [
   Question(),

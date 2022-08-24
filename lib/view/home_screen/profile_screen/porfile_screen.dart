@@ -17,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: Container(
-                    // padding: EdgeInsets.all(16),
+                    padding: EdgeInsets.all(16),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -25,6 +25,9 @@ class ProfileScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             InkWell(
+                              onTap: (){
+                                Navigator.pop(context);
+                              },
                               child: Icon(
                                 Icons.arrow_back,
                                 color: Colors.white,
@@ -56,10 +59,10 @@ class ProfileScreen extends StatelessWidget {
                         Container(
                           margin: EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
-                              color: Colors.lightGreen,
+                              color: Color(0xffF3FEF1),
                               borderRadius: BorderRadius.circular(10)),
                           child: ListTile(
-                            leading: Icon(Icons.sports_basketball),
+                            leading: Icon(Icons.sports_basketball,color: Colors.green,),
                             title: Text('Change Name'),
                             trailing: Icon(Icons.arrow_forward_sharp),
                           ),
@@ -73,7 +76,7 @@ class ProfileScreen extends StatelessWidget {
                             border: Border.all(width: 1),
                           ),
                           child: ListTile(
-                            leading: Icon(Icons.sports_basketball),
+                            leading: Icon(Icons.sports_basketball,color: Color(0xff1D592C),),
                             title: Text('Change Name'),
                             trailing: Icon(Icons.arrow_forward_sharp),
                           ),
@@ -86,8 +89,8 @@ class ProfileScreen extends StatelessWidget {
                             border: Border.all(width: 1),
                           ),
                           child: ListTile(
-                            leading: Icon(Icons.sports_basketball),
-                            title: Text('Change Name'),
+                            leading: Icon(Icons.sports_basketball,color: Color(0xff1D592C),),
+                            title: Text('Change Email'),
                             trailing: Icon(Icons.arrow_forward_sharp),
                           ),
                         ),

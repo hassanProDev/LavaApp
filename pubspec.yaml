@@ -72,6 +72,8 @@ flutter:
     - assets/images/notification/
     - assets/images/scanner/
     - assets/images/profile/
+    - assets/images/community/
+    - assets/images/cert/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

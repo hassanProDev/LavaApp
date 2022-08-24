@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lava_app/view/home_screen/tabs/questions_screen/data/question_data.dart';
+import 'package:lava_app/view/home_screen/questions_screen/data/question_data.dart';
 import 'package:lava_app/view/themes_colors.dart';
+
+import 'data/question_data.dart';
 
 class QuestionScreen extends StatefulWidget {
   static const String routeName = 'questionScreen';

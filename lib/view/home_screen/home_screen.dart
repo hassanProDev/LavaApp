@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lava_app/view/home_screen/barcode_screen/scan_screen.dart';
+import 'package:lava_app/view/home_screen/community/community_screen.dart';
 import 'package:lava_app/view/home_screen/customise/custom_btn_nav.dart';
-import 'package:lava_app/view/home_screen/tabs/barcode_screen/scan_screen.dart';
-import 'package:lava_app/view/home_screen/tabs/profile_screen/porfile_screen.dart';
+import 'package:lava_app/view/home_screen/profile_screen/porfile_screen.dart';
 import 'package:lava_app/view/home_screen/tabs/tabs.dart';
 
 import '../themes_colors.dart';
@@ -41,8 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomBtnNav(imgName: 'lava',func: (){
-                    pageIndex=1;
-                    setState((){});
+                    Navigator.pushNamed(context, CommunityScreen.routeName);
 
                   },),
                   CustomBtnNav(imgName: 'barcode',func: (){
@@ -54,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomBtnNav(imgName: 'Bell',ellipse: true,func: (){
-                    pageIndex=2;
+                    pageIndex=1;
                     setState((){});
                   },),
                   CustomBtnNav(imgName: 'person',func: (){
